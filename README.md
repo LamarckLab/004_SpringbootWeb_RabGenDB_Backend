@@ -13,11 +13,11 @@
 
 ---
 
-## 📖 项目简介
+## 项目简介
 
 **RabGenDB**（Rabies Genome Database）是一个狂犬病毒基因组数据库练手项目，支持序列元数据的**提交 → 审核 → 检索**全流程，并按**三级权限**（普通用户 / 管理员 / 超级管理员）划分功能。本仓库为其**后端**，以 REST 接口向前端（配套仓库 `005_SpringbootWeb_RabGenDB_Frontend`）提供服务。
 
-## 🧰 技术栈
+## 技术栈
 
 | 组件                      | 说明                                   |
 | :------------------------ | :------------------------------------- |
@@ -28,7 +28,7 @@
 | MySQL (mysql-connector-j) | 关系型数据库                           |
 | Lombok                    | 简化实体样板代码                       |
 
-## 🗂️ 目录结构
+## 目录结构
 
 ```
 src/main/java/com/rabies/
@@ -41,7 +41,7 @@ src/main/resources/
 └── application.properties        # 数据源与 MyBatis 配置
 ```
 
-## 🧬 数据模型
+## 数据模型
 
 **User**（用户表）
 
@@ -62,7 +62,7 @@ src/main/resources/
 | username                            | 提交者                  |
 | message                             | 审核意见 / 打回原因     |
 
-## 🔌 API 一览
+## API 一览
 
 **用户 · UserController**
 
@@ -92,7 +92,7 @@ src/main/resources/
 | GET  | `/genomeFlexSearchPage`      | 按 country + refinedHost 模糊检索（已通过）|
 | GET  | `/listGenomePage`            | 列出全部待审核序列（管理员）            |
 
-## 🚀 运行
+## 运行
 
 1. **建库**：在 MySQL 中创建数据库 `rabies`，并建好 `user`、`genome` 两张表。
 2. **配置**：按本机情况修改 `src/main/resources/application.properties` 的数据源（默认 `localhost:3306/rabies`，账号 `root`）。
