@@ -1,6 +1,7 @@
 <h1 align="center">🧬 RabGenDB · 后端</h1>
 
 <p align="center"><em>—— 狂犬病毒基因组数据库的 Spring Boot 后端</em></p>
+<p align="center"><em>—— 2024.12.24</em></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Framework-Spring%20Boot%203.4-6DB33F?style=flat-square" />
